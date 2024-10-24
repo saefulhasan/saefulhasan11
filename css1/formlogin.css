@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradasi warna biru */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.95); /* Latar belakang putih transparan */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Lebar form */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #aaa; /* Warna label */
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff; /* Warna label saat fokus */
+}
+
+.login-btn {
+    width: 100%;
+    background: #007bff; /* Ganti warna sesuai keinginan */
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-btn:hover {
+    background: #0056b3; /* Ganti warna saat hover */
+    transform: translateY(-2px); /* Efek naik saat hover */
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007bff; /* Warna link */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #0056b3; /* Ganti warna saat hover */
+}
